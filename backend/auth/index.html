@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SSO Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.c-login {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+}
+
+.c-login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.c-login__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+</style>
+<body>
+    <div class="c-login">
+        <form method="post" action="/login">
+            <h1>Login Form</h1>
+            <div class="c-login__inputs">
+                <input type="text" name="email" />
+                <input type="text" name="password" />
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
